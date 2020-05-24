@@ -2,4 +2,10 @@
 
 project ("CustomRTTI" LANGUAGES CXX)
 
-add_executable(main main.cpp TypeDispatcher.cpp)
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(main main.cpp TypeVisitor/TypeDispatcher.cpp)
+
+add_subdirectory ("UTest")
+include_directories("UTest")
+target_link_libraries(main UTest)

@@ -1,6 +1,8 @@
 ﻿#include "TypeDispatcher.h"
 #include "Types.h"
 
+using namespace TypeVisitor;
+
 void Derived1::Cast(BaseDispatcher& d)
 {
 	d.Cast(this);

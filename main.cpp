@@ -1,11 +1,13 @@
 #include <iostream>
 #include <memory>
-#include "TypeDispatcher.h"
-#include "Types.h"
+#include "TypeVisitor/TypeDispatcher.h"
+#include "TypeVisitor/Types.h"
 #include "UTest.h"
 
 int main()
 {
+	using namespace TypeVisitor;
+
 	std::unique_ptr<Base> base = std::make_unique<Derived1>();
 
 	UTestCase test_v1("Visitor: Base(Derived1) to Derived1 casted", [&base] {
