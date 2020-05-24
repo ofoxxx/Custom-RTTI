@@ -3,6 +3,7 @@
 
 void Derived1::Cast(BaseDispatcher& d)
 {
+	d.Cast(this);
 }
 
 void Derived2::Cast(BaseDispatcher& d)
