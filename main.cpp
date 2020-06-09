@@ -3,7 +3,7 @@
 #include "TypeMixin/Types.h"
 #include "TypeVisitor/TypeDispatcher.h"
 #include "TypeVisitor/Types.h"
-#include "UTest.h"
+#include "UTestCase.h"
 
 int main()
 {
